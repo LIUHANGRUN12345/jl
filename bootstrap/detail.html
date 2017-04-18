@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Detail</title>
+	<meta charset="UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div class="panel">
+			<div class="panel-body">
+				<audio src="" id="mp3" controls></audio>
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/jquery.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		console.log(window.location.search);
+		window.onload = function(){
+			var mp3Souces = getParams("id","imgUrl","downUrl");
+			$("#mp3").attr("src",mp3Souces[2]);
+		}
+
+		function getParams(){
+			var search = window.location.search;
+			search = search.slice(1);
+			var params = search.split("&");
+			var finalParams = [];
+			if(params.length  === arguments.length){
+				Array.prototype.forEach.call(arguments,function(_params,index){
+					finalParams.push(unescape(params[index].replace(_params+"=",""))); 
+				})
+			}else{
+				console.error("参数位数错误!");
+			}
+				return finalParams;
+		}
+	</script>
+</body>
+</html>

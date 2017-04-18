@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>handlbars</title>
+</head>
+<body>
+	<script type="text/x-handlerbar-template" id="about">
+		<div>
+			<p class="title">
+				{{title}}
+			</p>
+			<p class="body">
+				{{body}}
+				<span>{{params.name}}</span>
+				<span>{{params.sex}}</span>
+				<span>{{params.age}}</span>
+				<ul>
+					{{#each music}}
+						<li>
+							<p>{{id}}</p>
+							<p>{{musicName}}</p>
+							<p>{{musicAuthor}}</p>
+						</li>
+					{{/each}}
+				</ul>
+			</p>
+		</div>
+	</script>
+	<script type="text/javascript" src="handlebars-v4.0.5.js"></script>
+	<script type="text/javascript">
+		var content = {
+			title:"我的标题",
+			params : {
+				name:"xxx",
+				sex :"男",
+				age : 19
+			},
+			music : [
+				{
+					id:"1",
+					musicName:"我",
+					musicAuthor:"武大郎"
+				},
+				{
+					id:"2",
+					musicName:"你",
+					musicAuthor:"潘金莲"	
+				}
+			],
+			body:"内容"
+		}
+		// var template = Handlebars.compile($("#about").html());
+		// $("body").html(template({
+		// 	title:"我的标题",
+		// 	body:"内容"	
+		// }));
+		var about = document.querySelector("#about");
+		var about_source = about.innerHTML;
+		var about_template = Handlebars.compile(about_source);
+		var about_html = about_template(content);
+		console.log(about_html);
+		document.body.innerHTML += about_html;
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

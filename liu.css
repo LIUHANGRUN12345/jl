@@ -1,0 +1,175 @@
+.home-overlay-v2{
+	position: absolute;
+	width: 80%;
+	height: 78%;
+	left: 10%
+}
+.bgp{
+	width: 100%;
+	height: 100%;
+}
+@keyframes A
+{
+from {left:-1%;}
+to {left:50%;}
+}
+
+@-webkit-keyframes A /* Safari and Chrome */
+{
+from {left:-1%;}
+to {left:50%;}
+}
+.hp{
+	position: absolute;
+	animation: A 5s;
+	animation-duration: 5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	-webkit-animation: A 5s; /* Safari and Chrome */
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	top: 15%;
+	left: 25%;
+	width: 50%;
+	height: 20%;
+}
+.logo{
+	float: top;
+	width:100%;
+	height:124.5%;
+	background-color: black;
+}
+@keyframes B
+{
+from {left:46.5%;}
+to {left:-46%;}
+}
+
+@-webkit-keyframes B /* Safari and Chrome */
+{
+from {left:46.5%;}
+to {left:-46%;}
+}
+.zt{
+	font-size: 30px;
+	animation: B 8s;
+	animation-duration: 8s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	-webkit-animation: B 8s;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+    height: 5%;
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    color: white;
+}
+@keyframes c
+{
+from {top:4%;}
+to {top:93%;}
+}
+
+@-webkit-keyframes c /* Safari and Chrome */
+{
+from {top:4%;}
+to {top:93%;}
+}
+.zt2{
+	animation: c 12s;
+	animation-duration: 12s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	-webkit-animation: c 12s;
+	-webkit-animation-duration: 12s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	font-size: 30px;
+    height: 5%;
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+.head-color{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.fistDIV{
+	color: black;
+}
+@keyframes d
+{
+from {top:96%;}
+to {top:7%;}
+}
+
+@-webkit-keyframes d /* Safari and Chrome */
+{
+from {top:96%;}
+to {top:7%;}
+}
+.ski1ll {
+	animation: d 9s;
+	animation-duration: 9s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	-webkit-animation: d 9s;
+	-webkit-animation-duration: 9s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	position: absolute;
+	margin-left: 40%;
+	width: 52%;
+	height: 70px;
+	top: 56%;
+	left: -17%;
+	color: white;
+    
+   
+    display: inline-block;
+    margin-right: 10px;
+}
+.ski1ll li{
+	 border-radius: 50%;
+	 border: 1px solid #fff;
+}
+.container2{
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	top:76.5%;
+	left:10%;
+}
+.lover{
+	height: 295px;
+	width: 412px;
+
+}
+.about-extra-icon-style2 {
+	height: 295px;
+	width: 412px;
+}
+.about-extra{
+	width: 412px;
+}
+.ful{
+	width: 412px;
+	height: 257px;
+}
+.container{
+	position: absolute;
+	height: 100%;
+
+}
+.container3{
+	position: absolute;
+	width: 100%;
+	height: 300%;
+	top:158%;
+}

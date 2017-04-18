@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+	<title>Demo</title>
+	<style>
+		.navbar{
+			border-radius: 0;
+		}
+		.container,.container-fluid{
+			/*background-color: #bbb;*/
+		}
+		.panel .row div{
+			margin-bottom:25px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">我的博客</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example">
+		      <ul class="nav navbar-nav pull-right">
+		        <li class="active"><a href="#">登录</a></li>
+		        <li><a href="#">注册</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		</nav>
+	<div class="container-fluid">
+		<h1 class="text-center">Hello Boot</h1>
+		<div class="panel">
+			<div class="row">
+				<button class="btn btn-info"> 
+					添加
+					<span class="icon glyphicon glyphicon-plus-sign"></span>	 
+				</button>
+				<a href="" class="btn btn-danger">删除</a>
+				<div class="col-md-7 col-sm-7 col-xs-7">
+					虽然不总是必须，但是某些时候你可能需要将某些 DOM 内容放到一个盒子里。对于这种情况，可以试试面板组件。
+	基本实例
+	默认的 .panel 组件所做的只是设置基本的边框（border）和内补（padding）来包含内容。		
+				</div>
+				
+				<div class="col-md-5 col-xs-5 col-sm-5 col-sm-offset-0 col-md-offset-0">
+									虽然不总是必须，但是某些时候你可能需要将某些 DOM 内容放到一个盒子里。对于这种情况，可以试试面板组件。
+	基本实例
+	默认的 .panel 组件所做的只是设置基本的边框（border）和内补（padding）来包含内容。
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$("nav li").click(function(){
+			$(".active").removeClass("active");
+			$(this).addClass("active");
+		})
+	</script>
+</body>
+</html>

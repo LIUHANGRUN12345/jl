@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Review</title>
+</head>
+<body>
+	<script type="text/javascript">
+			// js 
+			// jquery-plugin 用 & 写
+			// CMD AMD  模块化概念
+			// 做题 https://www.nowcoder.com/ta/js-assessment?query=&asc=true&order=&page=1
+			var arr = [1,2,3,10,50,60,70,80];
+			//闭包
+			for(var i = 0 ; i < 10; i++){
+				var btn = document.createElement("button");
+				btn.textContent = i;
+				(function(index){
+					btn.onclick = function(){
+						console.log(index);
+					}
+				})(i);
+				document.body.appendChild(btn);
+			}
+			var tmp_arr = arr.map(function(c){
+				return [c,"a"]
+			})
+			console.log(tmp_arr);
+			arr = arr.filter(function(c){
+				return c > 50;
+			})
+			console.log(arr);
+			
+
+
+
+
+			
+	</script>
+</body>
+</html>
